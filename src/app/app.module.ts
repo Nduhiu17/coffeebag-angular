@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ForumItemComponent } from './components/forum-item/forum-item.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { AddForumComponent } from './components/add-forum/add-forum.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     // ForumComponent,
     ForumItemComponent,
     AboutComponent,
-    ContactsComponent
+    ContactsComponent,
+    AddForumComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
