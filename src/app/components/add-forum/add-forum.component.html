@@ -1,7 +1,7 @@
-<form class="forum-form">
+<form class="forum-form" (ngSubmit)="onSubmit()">
     <label for="title" class="label-div">Discussion Title</label>
-    <input type="text" id="Form_Name" name="Name" value="" maxlength="100" class="forum-form-title" spellcheck="true" />
+    <input type="text" class="forum-form-title" name="title" [(ngModel)]="title" placeholder="Add Todo..." />
     <div class="post-button-div">
-        <button class="post-button">Post Discussion</button>
+        <input type="submit" value="Post Discussion" class="post-button" />
     </div>
 </form>

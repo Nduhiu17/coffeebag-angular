@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-add-forum',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-forum.component.css']
 })
 export class AddForumComponent implements OnInit {
+  @Output() addForum: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  title: string;
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit() {}
+
+  onSubmit() {
+    const forum = {
+      title: this.title
+    };
+    this.addForum.emit(forum);
   }
-
 }

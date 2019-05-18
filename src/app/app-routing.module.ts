@@ -3,13 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { ForumsComponent } from './components/forums/forums.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
-import { AddForumComponent } from './components/add-forum/add-forum.component';
+import { PostForumComponent } from './components/post-forum/post-forum.component';
 
 const routes: Routes = [
   { path: '', component: ForumsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contacts', component: ContactsComponent },
-  { path: 'add-forum', component: AddForumComponent }
+  { path: 'create-forum', component: PostForumComponent }
 ];
 
 @NgModule({
